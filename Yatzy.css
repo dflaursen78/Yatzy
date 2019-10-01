@@ -1,0 +1,39 @@
+table, th, td {
+    border: 1px solid black !important;
+   
+}
+input {
+    width: 2em;
+    text-align: center;
+    
+}
+
+th,td {
+    width: 5em;
+    text-align: center;
+}
+
+.celleBaggrund1{
+    background-color: aqua;
+}
+
+.celleBaggrund2{
+    background-color: yellow;
+}
+
+.celleBaggrund3{
+    background-color: rgb(252, 255, 205);
+}
+
+.celleBaggrund4{
+    background-color: aquamarine;
+}
+
+.celleBaggrund5{
+    background-color: rosybrown;
+}
+
+.celleBaggrund6{
+    background-color: beige;
+}
+

@@ -1,0 +1,242 @@
+<Doctype>
+    <html>
+
+    <head>
+        <Title>Super Yatzy</Title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="Yatzy.css ">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    </head>
+
+    <body>
+        <div class="table responsive">
+
+            <h2>Super Yatzy</h2>
+            <table class="table table-bordered table-striped">
+                <thead>
+                    <tr>
+                        <th><button id="Roll" type="button" class="btn btn-outline-success">Roll Dice</button></th>
+
+                        <th> Roll count: <input type="text" id="rollcount"> </th>
+
+                        <th><input type="text" name="terning" id="terning1"> </label> </th>
+                        <th><input type="text" name="terning" id="terning2"> </label> </th>
+                        <th><input type="text" name="terning" id="terning3"> </label> </th>
+                        <th><input type="text" name="terning" id="terning4"> </label> </th>
+                        <th><input type="text" name="terning" id="terning5"> </label> </th>
+                        <th><input type="text" name="terning" id="terning6"> </label> </th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                    <tr>
+                        <th></th>
+                        <th>Hold</th>
+                        <th><label><input type="checkbox" name="check" id="c1"> 1</label> </th>
+                        <th><label><input type="checkbox" name="check" id="c2"> 2</label> </th>
+                        <th><label><input type="checkbox" name="check" id="c3"> 3</label> </th>
+                        <th><label><input type="checkbox" name="check" id="c4"> 4</label> </th>
+                        <th><label><input type="checkbox" name="check" id="c5"> 5</label> </th>
+                        <th><label><input type="checkbox" name="check" id="c6"> 6</label> </th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                    <tr>
+                        <th></th>
+                        <th>Spillere</th>
+                        <th><button id="player1" class="btn btn-Secondary">1</button></th>
+                        <!-- 
+                        <th><button id="Player2" class="btn btn-Secondary">2</button></th>
+                      
+                        -->
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Enere</td>
+                        <td>6</td>
+                        <td class="cellePlayer1"><input type="button" id="btn_C1R1" value="click"></td>
+                        <!--
+                        <td class="cellePlayer2"></td>
+                      
+                        -->
+                    </tr>
+                    <tr>
+                        <td>Toere</td>
+                        <td>12</td>
+                        <td class="cellePlayer1"><input type="button" id="btn_C1R2" value="click"></td>
+                        <!--
+                        <td class="cellePlayer2"></td>
+                        
+                        -->
+                    </tr>
+                    <tr>
+                        <td>Treere</td>
+                        <td>18</td>
+                        <td class="cellePlayer1"><input type="button" id="btn_C1R3" value="click"></td>
+                        <!--
+                        <td class="cellePlayer2"></td>
+                       
+                        -->
+                    </tr>
+                    <tr>
+                        <td>firere</td>
+                        <td>24</td>
+                        <td class="cellePlayer1"><input type="button" id="btn_C1R4" value="click"></td>
+                        <!--
+                        <td class="cellePlayer2"></td>
+                        
+                        -->
+                    </tr>
+                    <tr>
+                        <td>Femmere</td>
+                        <td>30</td>
+                        <td class="cellePlayer1"><input type="button" id="btn_C1R5" value="click"></td>
+                        <!--
+                        <td class="cellePlayer2"></td>
+                       
+                        -->
+                    </tr>
+                    <tr>
+                        <td>Seksere</td>
+                        <td>36</td>
+                        <td class="cellePlayer1"><input type="button" id="btn_C1R6" value="click"></td>
+                        <!--
+                        <td class="cellePlayer2"></td>
+                       
+                        -->
+                    </tr>
+                    <tr>
+                        <td>Sum (min 84 for bonus)</td>
+                        <td></td>
+                        <td class="cellePlayer1"><input type="button" id="btn_C1R7" value="click"></td>
+                        <!--
+                        <td class="cellePlayer2"></td>
+                     
+                        -->
+                    </tr>
+                    <tr>
+                        <td>Bonus</td>
+                        <td>100</td>
+                        <td class="cellePlayer1"><input type="button" id="btn_C1R8" disabled></td>
+                        <!--
+                        <td class="cellePlayer2"></td>
+                      
+                        -->
+                    </tr>
+                    <tr>
+                        <td>Et par</td>
+                        <td>12</td>
+                        <td class="cellePlayer1"><input type="button" id="btn_C1R9" value="click"></td>
+                        <!--
+                        <td class="cellePlayer2"></td>
+                      
+                        -->
+                    </tr>
+                    <tr>
+                        <td>To par</td>
+                        <td>22</td>
+                        <td class="cellePlayer1"><input type="button" id="btn_C1R10" value="click"></td>
+                        <!--
+                        <td class="cellePlayer2"></td>
+                        
+                        -->
+                    </tr>
+                    <tr>
+                        <td>Tre par</td>
+                        <td>30</td>
+                        <td class="cellePlayer1"><input type="button" id="btn_C1R11" value="click"></td>
+                        <!--
+                        <td class="cellePlayer2"></td>
+                     
+                        -->
+                    </tr>
+                    <tr>
+                        <td>Fire ens</td>
+                        <td>24</td>
+                        <td class="cellePlayer1"><input type="button" id="btn_C1R12" value="click"></td>
+                        <!--
+                        <td class="cellePlayer2"></td>
+                       
+                        -->
+                    </tr>
+                    <tr>
+                        <td>2x3 ens</td>
+                        <td>33</td>
+                        <td class="cellePlayer1"><input type="button" id="btn_C1R13" value="click"></td>
+                        <!--
+                        <td class="cellePlayer2"></td>
+                       
+                        -->
+                    </tr>
+                    <tr>
+                        <td>Lille streight 1-2-3-4-5</td>
+                        <td>15</td>
+                        <td class="cellePlayer1"><input type="button" id="btn_C1R14" value="click"></td>
+                        <!--
+                        <td class="cellePlayer2"></td>
+                       
+                        -->
+                    </tr>
+                    <tr>
+                        <td>Store streight 2-3-4-5-6</td>
+                        <td>20</td>
+                        <td class="cellePlayer1"><input type="button" id="btn_C1R15" value="click"></td>
+                        <!--
+                        <td class="cellePlayer2"></td>
+                        
+                        -->
+                    </tr>
+                    <tr>
+                        <td>Royal 1-2-3-4-5-6</td>
+                        <td>30</td>
+                        <td class="cellePlayer1"><input type="button" id="btn_C1R16" value="click"></td>
+                        <!--
+                        <td class="cellePlayer2"></td>
+                        
+                        -->
+                    </tr>
+                    <tr>
+                        <td>Hus 3 og 2 ens</td>
+                        <td>28</td>
+                        <td class="cellePlayer1"><input type="button" id="btn_C1R17" value="click"></td>
+                        <!--
+                        <td class="cellePlayer2"></td>
+                      
+                        -->
+                    </tr>
+                    <tr>
+                        <td>Chance</td>
+                        <td>36</td>
+                        <td class="cellePlayer1"><input type="button" id="btn_C1R18" value="click"></td>
+                        <!--
+                        <td class="cellePlayer2"></td>
+                       
+                        -->
+                    </tr>
+                    <tr>
+                        <td>Yatzy</td>
+                        <td>100 + <br>
+                            det terningerne viser</td>
+                        <td class="cellePlayer1"><input type="button" id="btn_C1R19" value="click"></td>
+                        
+                    </tr>
+                    <tr>
+                        <td>SUM</td>
+                        <td></td>
+                        <td class="cellePlayer1"><input type="button" id="btn_C1R20" value="click"></td>
+                       
+                    </tr>
+
+                </tbody>
+            </table>
+
+        </div>
+        <script src="Yatzy.js"></script><!-- defer = slå det op-->
+    </body>
+
+    </html>
